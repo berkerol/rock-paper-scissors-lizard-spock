@@ -6,7 +6,7 @@ I created this game because I could not find a simple and convenient enough game
 
 Computer chooses its option randomly.
 
-You can close the dialog with options (first ss) to give up and jump to the statistics (last ss).
+You can close the dialog with options (first screenshot) to give up and jump to the statistics (last screenshot).
 
 ![options](screenshots/options.bmp)
 
