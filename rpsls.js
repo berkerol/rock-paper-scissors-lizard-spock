@@ -111,6 +111,9 @@ function fight (user, range) {
     totalTie++;
   }
   text += '<br>Won: ' + totalWon + '. Tie: ' + totalTie + '. Lost: ' + totalLost + '.';
-  document.getElementById('text').className = className;
-  document.getElementById('text').innerHTML = text;
+  let child = document.createElement('div');
+  child.className = className;
+  child.innerHTML = text;
+  let parent = document.getElementById('text');
+  parent.insertBefore(child, parent.firstChild);
 }
