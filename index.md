@@ -1,13 +1,3 @@
-# Rock Paper Scissors (Lizard Spock)
+# Rock Paper Scissors Lizard Spock
 
-Remake of the classic game. You can play with or without the Lizard Spock expansion.
-
-I created this game because I could not find a simple and convenient enough game for this type.
-
-Computer chooses its option randomly.
-
-You can close the dialog with options (first screenshot) to give up and jump to the statistics (last screenshot).
-
-![options](screenshots/options.bmp)
-
-![result](screenshots/result.bmp) ![statistics](screenshots/statistics.bmp)
+Remake of the classic game with the Lizard Spock expansion. Computer chooses its option randomly. Written in ES6\. You can play [with](https://berkerol.github.io/rock-paper-scissors-lizard-spock/rpsls.html) or [without](https://berkerol.github.io/rock-paper-scissors-lizard-spock/rps.html) the Lizard Spock expansion.

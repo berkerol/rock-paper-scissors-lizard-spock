@@ -1,25 +1,15 @@
-# Rock Paper Scissors (Lizard Spock)
+# Rock Paper Scissors Lizard Spock
 
-Remake of the classic game. You can play with or without the Lizard Spock expansion.
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/berkerol/rock-paper-scissors-lizard-spock/issues)
+[![semistandard](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
+[![license](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](https://github.com/berkerol/rock-paper-scissors-lizard-spock/blob/master/LICENSE)
 
-I created this game because I could not find a simple and convenient enough game for this type.
-
-Computer chooses its option randomly.
-
-You can close the dialog with options (first screenshot) to give up and jump to the statistics (last screenshot).
-
-![options](screenshots/options.bmp)
-
-![result](screenshots/result.bmp) ![statistics](screenshots/statistics.bmp)
-
-## Installation
-
-Built by NetBeans 8.2 (whole repository is the NetBeans project).
+Remake of the classic game with the Lizard Spock expansion. Computer chooses its option randomly. Written in ES6\. You can play [with](https://berkerol.github.io/rock-paper-scissors-lizard-spock/rpsls.html) or [without](https://berkerol.github.io/rock-paper-scissors-lizard-spock/rps.html) the Lizard Spock expansion.
 
 ## Contribution
 
-Feel free to contribute.
+Feel free to [contribute](https://github.com/berkerol/rock-paper-scissors-lizard-spock/issues) according to the [semistandard rules](https://github.com/Flet/semistandard).
 
 ## Distribution
 
-You can distribute this software (jar file in the dist folder) freely under GNU GPL v3.0.
+You can distribute this software freely under [GNU GPL v3.0](https://github.com/berkerol/rock-paper-scissors-lizard-spock/blob/master/LICENSE).
