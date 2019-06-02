@@ -2,7 +2,7 @@ let totalWon = 0;
 let totalTie = 0;
 let totalLost = 0;
 
-function fight (user, range) {
+window.fight = function (user, range) {
   const cmp = Math.floor(Math.random() * range);
   let text = 'Computer chose ';
   switch (cmp) {
@@ -118,4 +118,4 @@ function fight (user, range) {
   child.innerHTML = '<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>' + text;
   const parent = document.getElementById('text');
   parent.insertBefore(child, parent.firstChild);
-}
+};
