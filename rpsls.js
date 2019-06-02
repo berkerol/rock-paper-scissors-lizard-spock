@@ -4,106 +4,108 @@ let totalLost = 0;
 
 function fight (user, range) {
   const cmp = Math.floor(Math.random() * range);
-  let text;
+  let text = 'Computer chose ';
   switch (cmp) {
     case 0:
-      text = 'Computer chose Rock.';
+      text += 'Rock';
       break;
     case 1:
-      text = 'Computer chose Paper.';
+      text += 'Paper';
       break;
     case 2:
-      text = 'Computer chose Scissors.';
+      text += 'Scissors';
       break;
     case 3:
-      text = 'Computer chose Lizard.';
+      text += 'Lizard';
       break;
     default:
-      text = 'Computer chose Spock.';
+      text += 'Spock';
   }
-  const won = '<br>Congratulations, you won!';
-  const lost = '<br>What a shame, you lost!';
+  const won = ', you won!';
+  const lost = ', you lost!';
+  const wonAlert = 'alert-success';
+  const lostAlert = 'alert-danger';
   let className = 'alert ';
-  text += '<br>';
+  text += '.<br>';
   if (user === 2 && cmp === 1) {
-    text += 'Scissors cuts Paper.' + won;
-    className += 'alert-success';
+    text += 'Scissors cuts Paper' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 1 && cmp === 0) {
-    text += 'Paper covers Rock.' + won;
-    className += 'alert-success';
+    text += 'Paper covers Rock' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 0 && cmp === 3) {
-    text += 'Rock crushes Lizard.' + won;
-    className += 'alert-success';
+    text += 'Rock crushes Lizard' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 3 && cmp === 4) {
-    text += 'Lizard poisons Spock.' + won;
-    className += 'alert-success';
+    text += 'Lizard poisons Spock' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 4 && cmp === 2) {
-    text += 'Spock smashes Scissors.' + won;
-    className += 'alert-success';
+    text += 'Spock smashes Scissors' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 2 && cmp === 3) {
-    text += 'Scissors decapitates Lizard.' + won;
-    className += 'alert-success';
+    text += 'Scissors decapitates Lizard' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 3 && cmp === 1) {
-    text += 'Lizard eats Paper.' + won;
-    className += 'alert-success';
+    text += 'Lizard eats Paper' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 1 && cmp === 4) {
-    text += 'Paper disproves Spock.' + won;
-    className += 'alert-success';
+    text += 'Paper disproves Spock' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 4 && cmp === 0) {
-    text += 'Spock vaporizes Rock.' + won;
-    className += 'alert-success';
+    text += 'Spock vaporizes Rock' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 0 && cmp === 2) {
-    text += 'Rock crushes Scissors.' + won;
-    className += 'alert-success';
+    text += 'Rock crushes Scissors' + won;
+    className += wonAlert;
     totalWon++;
   } else if (user === 2 && cmp === 0) {
-    text += 'Rock crushes Scissors.' + lost;
-    className += 'alert-danger';
+    text += 'Rock crushes Scissors' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 0 && cmp === 4) {
-    text += 'Spock vaporizes Rock.' + lost;
-    className += 'alert-danger';
+    text += 'Spock vaporizes Rock' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 4 && cmp === 1) {
-    text += 'Paper disproves Spock.' + lost;
-    className += 'alert-danger';
+    text += 'Paper disproves Spock' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 1 && cmp === 3) {
-    text += 'Lizard eats Paper.' + lost;
-    className += 'alert-danger';
+    text += 'Lizard eats Paper' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 3 && cmp === 2) {
-    text += 'Scissors decapitates Lizard.' + lost;
-    className += 'alert-danger';
+    text += 'Scissors decapitates Lizard' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 2 && cmp === 4) {
-    text += 'Spock smashes Scissors.' + lost;
-    className += 'alert-danger';
+    text += 'Spock smashes Scissors' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 4 && cmp === 3) {
-    text += 'Lizard poisons Spock.' + lost;
-    className += 'alert-danger';
+    text += 'Lizard poisons Spock' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 3 && cmp === 0) {
-    text += 'Rock crushes Lizard.' + lost;
-    className += 'alert-danger';
+    text += 'Rock crushes Lizard' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 0 && cmp === 1) {
-    text += 'Paper covers Rock.' + lost;
-    className += 'alert-danger';
+    text += 'Paper covers Rock' + lost;
+    className += lostAlert;
     totalLost++;
   } else if (user === 1 && cmp === 2) {
-    text += 'Scissors cuts Paper.' + lost;
-    className += 'alert-danger';
+    text += 'Scissors cuts Paper' + lost;
+    className += lostAlert;
     totalLost++;
   } else {
     text += 'There is a tie.';
