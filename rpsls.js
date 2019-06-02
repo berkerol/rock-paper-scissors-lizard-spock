@@ -3,7 +3,7 @@ let totalTie = 0;
 let totalLost = 0;
 
 function fight (user, range) {
-  let cmp = Math.floor(Math.random() * range);
+  const cmp = Math.floor(Math.random() * range);
   let text;
   switch (cmp) {
     case 0:
@@ -21,8 +21,8 @@ function fight (user, range) {
     default:
       text = 'Computer chose Spock.';
   }
-  let won = '<br>Congratulations, you won!';
-  let lost = '<br>What a shame, you lost!';
+  const won = '<br>Congratulations, you won!';
+  const lost = '<br>What a shame, you lost!';
   let className = 'alert ';
   text += '<br>';
   if (user === 2 && cmp === 1) {
@@ -111,9 +111,9 @@ function fight (user, range) {
     totalTie++;
   }
   text += '<br>Won: ' + totalWon + '. Tie: ' + totalTie + '. Lost: ' + totalLost + '.';
-  let child = document.createElement('div');
+  const child = document.createElement('div');
   child.className = className + ' alert-dismissible';
   child.innerHTML = '<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>' + text;
-  let parent = document.getElementById('text');
+  const parent = document.getElementById('text');
   parent.insertBefore(child, parent.firstChild);
 }
