@@ -112,7 +112,7 @@ window.fight = function (user, range) {
     className += 'alert-warning';
     totalTie++;
   }
-  text += `<br>Won: ${totalWon}. Tie: ${totalTie}. Lost: ${totalLost}.`;
+  document.getElementById('statistics').innerHTML = `Won: ${totalWon} Tie: ${totalTie} Lost: ${totalLost}`;
   const child = document.createElement('div');
   child.className = className + ' alert-dismissible';
   child.innerHTML = '<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>' + text;
