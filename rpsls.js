@@ -1,3 +1,18 @@
+window.create = function (n) {
+  const photos = document.getElementById('photos');
+  const list = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+  for (let i = 0; i < n; i++) {
+    const img = document.createElement('img');
+    img.className = 'img-fluid rounded mx-auto d-block';
+    img.src = `images/${list[i]}.jpg`;
+    img.setAttribute('onclick', `fight(${i}, ${n})`);
+    const div = document.createElement('div');
+    div.className = 'col-6 col-md-4 mt-4';
+    div.appendChild(img);
+    photos.appendChild(div);
+  }
+};
+
 let totalWon = 0;
 let totalTie = 0;
 let totalLost = 0;
