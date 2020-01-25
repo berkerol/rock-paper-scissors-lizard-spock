@@ -6,7 +6,7 @@
 [![ECMAScript](https://img.shields.io/badge/ECMAScript-latest-brightgreen.svg)](https://www.ecma-international.org/ecma-262)
 [![license](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-blue.svg)](https://github.com/berkerol/rock-paper-scissors-lizard-spock/blob/master/LICENSE)
 
-Remake of the classic game with the Lizard Spock expansion. Computer chooses its option randomly. You can play [with](https://berkerol.github.io/rock-paper-scissors-lizard-spock/rpsls.html) or [without](https://berkerol.github.io/rock-paper-scissors-lizard-spock/rps.html) the Lizard Spock expansion.
+Remake of the classic game with the Lizard Spock expansion. Computer chooses its option randomly. You can play [with](https://berkerol.github.io/rock-paper-scissors-lizard-spock/rpsls.html?lizard-spock) or [without](https://berkerol.github.io/rock-paper-scissors-lizard-spock/rpsls.html) the Lizard Spock expansion.
 
 ## Contribution
 
