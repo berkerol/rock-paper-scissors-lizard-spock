@@ -1,8 +1,8 @@
-/* global write */
+/* global createAlert */
 const wonText = ', you won!';
 const lostText = ', you lost!';
-const wonAlert = 'alert-success';
-const lostAlert = 'alert-danger';
+const wonType = 'success';
+const lostType = 'danger';
 const names = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 const photos = document.getElementById('photos');
 
@@ -43,93 +43,93 @@ window.fight = function (user) {
     default:
       text += 'Spock';
   }
-  let className = 'alert ';
   text += '.<br>';
+  let type;
   if (user === 2 && cmp === 1) {
     text += 'Scissors cuts Paper' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 1 && cmp === 0) {
     text += 'Paper covers Rock' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 0 && cmp === 3) {
     text += 'Rock crushes Lizard' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 3 && cmp === 4) {
     text += 'Lizard poisons Spock' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 4 && cmp === 2) {
     text += 'Spock smashes Scissors' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 2 && cmp === 3) {
     text += 'Scissors decapitates Lizard' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 3 && cmp === 1) {
     text += 'Lizard eats Paper' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 1 && cmp === 4) {
     text += 'Paper disproves Spock' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 4 && cmp === 0) {
     text += 'Spock vaporizes Rock' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 0 && cmp === 2) {
     text += 'Rock crushes Scissors' + wonText;
-    className += wonAlert;
+    type = wonType;
     totalWon++;
   } else if (user === 2 && cmp === 0) {
     text += 'Rock crushes Scissors' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 0 && cmp === 4) {
     text += 'Spock vaporizes Rock' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 4 && cmp === 1) {
     text += 'Paper disproves Spock' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 1 && cmp === 3) {
     text += 'Lizard eats Paper' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 3 && cmp === 2) {
     text += 'Scissors decapitates Lizard' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 2 && cmp === 4) {
     text += 'Spock smashes Scissors' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 4 && cmp === 3) {
     text += 'Lizard poisons Spock' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 3 && cmp === 0) {
     text += 'Rock crushes Lizard' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 0 && cmp === 1) {
     text += 'Paper covers Rock' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else if (user === 1 && cmp === 2) {
     text += 'Scissors cuts Paper' + lostText;
-    className += lostAlert;
+    type = lostType;
     totalLost++;
   } else {
     text += 'There is a tie.';
-    className += 'alert-warning';
+    type = 'warning';
     totalTie++;
   }
   document.getElementById('statistics').innerHTML = `Won: ${totalWon} Tie: ${totalTie} Lost: ${totalLost}`;
-  write(className, text);
+  createAlert(type, text);
 };
